@@ -1,0 +1,145 @@
+.navbar-cont{
+    z-index: 500;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    transition: 0.5s;
+    background-color: #000032;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100vw;
+
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-logo{
+    width: 10vmin;
+}
+
+#sm-nav{
+    display: none;
+}
+
+#lg-nav{
+    display: flex;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    
+    padding: 1rem 0px;
+    color:#ffffff;
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    height: 100%;
+}
+
+.a:hover{
+    border-bottom: 3px solid white;
+    
+}
+
+.nav-item:last-child{
+    border-bottom: none;
+}
+
+.sm-navbar-menu{
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sm-nav-item{
+    font-size: 18px;
+    color:#E8D98B;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem;
+    
+    border-top: 1px solid #E8D98B;
+    background-color: #000032;
+}
+
+.nav-icons{
+    width: 5vmin;
+    margin-right: 10px;
+}
+
+.nav-icon{
+    width: 100%;
+}
+
+a:link, a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.navbar-inner-btn{
+    padding: 0.7rem 3rem;
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.navbar-inner-btn:hover{
+    background-color: white;
+    color: #000032;
+}
+
+.navbar-menu-cont{
+    padding: 1rem 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar-menu-cont:hover{
+    background-color: #e9e9f2;
+}
+
+@media (max-width:850px){
+    #sm-nav{
+        display: flex;
+    }
+
+    #lg-nav{
+        display: none;
+    }
+
+    .navbar{
+        padding: 0.5rem 0.5rem;
+        align-items: center;
+    }
+
+    .new-sm-medium{
+        width: 100%;
+    }
+}
+
+
+.log-nav{
+    padding: 1rem;
+}
